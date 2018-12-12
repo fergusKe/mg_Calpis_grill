@@ -1,0 +1,593 @@
+.main {
+  position: relative;
+  width: 800px;
+  height: 1200px;
+  margin: 0 auto;
+  background: url(../images/game/step2/step2-bg.png) 0 0 no-repeat;
+  padding-top: 70px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.item-list > div {
+  z-index: 3;
+}
+.item-list .wrong {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 107px;
+  height: 110px;
+  background: url(../images/game/step2/wrong-icon.png);
+}
+.item-list .item-finger {
+  display: none;
+  position: absolute;
+  width: 94px;
+  height: 110px;
+  background: url(../images/game/step2/item-finger.png) 0 0 no-repeat;
+}
+.item-list .error .wrong {
+  display: block;
+}
+.item-list .finger .item-finger {
+  display: block;
+}
+
+.item1 {
+  position: absolute;
+  top: 102px;
+  left: 28px;
+  width: 157px;
+  height: 203px;
+  background: url(../images/game/step2/item1.png) 0 0 no-repeat;
+}
+.item1.active {
+  top: 78px;
+  left: 23px;
+  height: 319px;
+  background: url(../images/game/step2/item1.png) 0 -202px no-repeat;
+}
+.item1 .item-finger {
+  top: 209px;
+  left: 52px;
+}
+
+.item2 {
+  position: absolute;
+  top: 95px;
+  left: 173px;
+  width: 157px;
+  height: 208px;
+  background: url(../images/game/step2/item2.png) 0 0 no-repeat;
+}
+.item2.active {
+  top: 72px;
+  left: 166px;
+  height: 325px;
+  background: url(../images/game/step2/item2.png) 0 -208px no-repeat;
+}
+.item2 .item-finger {
+  top: 215px;
+  left: 58px;
+}
+
+.item3 {
+  position: absolute;
+  top: 74px;
+  left: 307px;
+  width: 157px;
+  height: 217px;
+  background: url(../images/game/step2/item3.png) 0 0 no-repeat;
+}
+.item3.active {
+  top: 66px;
+  left: 295px;
+  width: 170px;
+  height: 331px;
+  background: url(../images/game/step2/item3.png) 0 -219px no-repeat;
+}
+.item3 .item-finger {
+  top: 221px;
+  left: 57px;
+}
+
+.item4 {
+  position: absolute;
+  top: 101px;
+  left: 458px;
+  width: 157px;
+  height: 209px;
+  background: url(../images/game/step2/item4.png) 0 0 no-repeat;
+}
+.item4.active {
+  top: 101px;
+  left: 444px;
+  width: 172px;
+  height: 300px;
+  background: url(../images/game/step2/item4.png) 0 -209px no-repeat;
+}
+.item4 .item-finger {
+  top: 190px;
+  left: 69px;
+}
+
+.item5 {
+  position: absolute;
+  top: 99px;
+  left: 620px;
+  width: 157px;
+  height: 243px;
+  background: url(../images/game/step2/item5.png) 0 0 no-repeat;
+}
+.item5.active {
+  top: 80px;
+  left: 621px;
+  width: 157px;
+  height: 342px;
+  background: url(../images/game/step2/item5.png) 0 -243px no-repeat;
+}
+.item5 .item-finger {
+  top: 230px;
+  left: 41px;
+}
+
+.bbq {
+  position: absolute;
+  top: 300px;
+  left: 81px;
+  width: 650px;
+  height: 650px;
+  background: url(../images/game/step2/bbq.png) 0 0 no-repeat;
+}
+
+.drink-countdown {
+  position: absolute;
+  top: 332px;
+  left: 554px;
+  width: 239px;
+  height: 235px;
+  background: url(../images/game/step2/drink-countdown.png) 0 0 no-repeat;
+  z-index: 1;
+}
+.drink-countdown .drink-num {
+  font-size: 97px;
+  color: #F10C83;
+  font-weight: 700;
+  position: absolute;
+  top: 62px;
+  left: 73px;
+  font-family: sans-serif;
+}
+
+.game-countdown {
+  position: absolute;
+  top: 903px;
+  left: 48px;
+  width: 227px;
+  height: 134px;
+  background: url(../images/game/step2/game-countdown.png) 0 0 no-repeat;
+  font-size: 90px;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 1;
+}
+.game-countdown .minute {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.game-countdown .second {
+  position: absolute;
+  top: 15px;
+  left: 113px;
+}
+
+.footer {
+  position: absolute;
+  top: 910px;
+  left: 27px;
+  width: 721px;
+  height: 264px;
+  background: url(../images/game/step2/msg.png) 0 0 no-repeat;
+}
+
+.show-msg {
+  display: none;
+  position: absolute;
+  top: 316px;
+  width: 800px;
+  height: 703px;
+}
+.show-msg.start-countdown .msg-cont {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 280px;
+  height: 415px;
+  background: url(../images/game/step2/start-countdown.png) 0 -828px no-repeat;
+}
+.show-msg.item-msg .msg-cont {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 671px;
+  height: 257px;
+  background: url(../images/game/step2/msg1-1.png) 0 0 no-repeat;
+}
+
+.popup#fb-page .popup-main {
+  width: 671px;
+  height: 825px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background: url(../images/game/step1/fb-page.png) 0 100px no-repeat;
+}
+.popup#fb-page .fb-page-iframe {
+  position: absolute;
+  top: 352px;
+  left: 152px;
+}
+.popup#fb-page .fb-page-btn {
+  position: absolute;
+  right: 215px;
+  top: 420px;
+  width: 329px;
+  height: 102px;
+  background: url(../images/game/step1/fb-page-skip-btn.png) 0 0 no-repeat;
+}
+.popup#fb-page .fb-page-btn:hover {
+  height: 104px;
+  background: url(../images/game/step1/fb-page-skip-btn.png) 0 -103px no-repeat;
+}
+.popup#game-intro .popup-main {
+  width: 784px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.popup#game-intro .step1-start-btn {
+  position: absolute;
+  right: 25px;
+  top: 541px;
+  width: 345px;
+  height: 381px;
+  background: url(../images/game/step1/step1-start-btn.png) 0 0 no-repeat;
+}
+.popup#game-intro .step1-start-btn:hover {
+  background: url(../images/game/step1/step1-start-btn.png) 0 -381px no-repeat;
+}
+.popup#drinking .popup-main {
+  width: 700px;
+  height: 800px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.popup#drinking.drink1 .drink.d1 {
+  display:black;
+  position: absolute;
+  top: 202px;
+  left: 167px;
+  margin: 0 auto;
+  width: 313px;
+  height: 754px;
+  background: url(../images/game/step2/drink1.png) 0 0 no-repeat;
+}
+.popup#drinking.drink2 .drink.d2 {
+  position: absolute;
+  top: 202px;
+  left: 167px;
+  margin: 0 auto;
+  width: 335px;
+  height: 807px;
+  background: url(../images/game/step2/drink2.png) 0 0 no-repeat;
+}
+.popup#drinking.drink3 .drink.d3 {
+  position: absolute;
+  top: 202px;
+  left: 167px;
+  margin: 0 auto;
+  width: 322px;
+  height: 775px;
+  background: url(../images/game/step2/drink3.png) 0 0 no-repeat;
+}
+.popup#drinking.drink4 .drink.d4 {
+  position: absolute;
+  top: 202px;
+  left: 167px;
+  margin: 0 auto;
+  width: 317px;
+  height: 656px;
+  background: url(../images/game/step2/drink4.png) 0 0 no-repeat;
+}
+.popup#drinking.drink5 .drink.d5 {
+  position: absolute;
+  top: 202px;
+  left: 167px;
+  margin: 0 auto;
+  width: 344px;
+  height: 656px;
+  background: url(../images/game/step2/drink5.png) 0 0 no-repeat;
+}
+.popup#drinking .drink-msg {
+  position: absolute;
+  top: 525px;
+  left: 420px;
+  width: 261px;
+  height: 266px;
+  background: url(../images/game/step2/click-drink-msg.png) 0 0 no-repeat;
+}
+.popup#drinking.mobile .drink-msg {
+  background: url(../images/game/step2/touch-drink-msg.png) 0 0 no-repeat;
+}
+.popup#drinking .finger {
+  position: absolute;
+  top: 572px;
+  left: 261px;
+  width: 110px;
+  height: 151px;
+  background: url(../images/game/step2/finger.png) 0 0 no-repeat;
+}
+.popup#gameover .popup-main {
+  width: 662px;
+}
+.popup#gameover .timeout-cont {
+  margin: 0 auto;
+}
+.popup#gameover .success-cont {
+  display: none;
+  position: relative;
+  width: 662px;
+  height: 667px;
+  background: url(../images/game/step3/success.png);
+  margin: 0 auto;
+}
+.popup#gameover .success-cont .success-btn {
+  position: absolute;
+  top: 248px;
+  left: 91px;
+  width: 325px;
+  height: 86px;
+  background: url(../images/game/step3/success-btn.png) 0 0 no-repeat;
+}
+.popup#gameover .success-cont .success-btn:hover {
+  height: 88px;
+  background: url(../images/game/step3/success-btn.png) 0 -86px no-repeat;
+}
+.popup#gameover .fail-cont {
+  display: none;
+  position: relative;
+  width: 514px;
+  height: 525px;
+  background: url(../images/game/step3/fail.png);
+  margin: 0 auto;
+}
+.popup#gameover .fail-cont .fail-btn {
+  position: absolute;
+  top: 326px;
+  left: 94px;
+  width: 326px;
+  height: 86px;
+  background: url(../images/game/step3/fail-btn.png) 0 0 no-repeat;
+}
+.popup#gameover .fail-cont .fail-btn:hover {
+  height: 90px;
+  background: url(../images/game/step3/fail-btn.png) 0 -86px no-repeat;
+}
+.popup#gameover.timeout .timeout-cont {
+  display: block;
+}
+.popup#gameover.timeout .success-cont {
+  display: none;
+}
+.popup#gameover.timeout .fail-cont {
+  display: none;
+}
+.popup#gameover.success .timeout-cont {
+  display: none;
+}
+.popup#gameover.success .success-cont {
+  display: block;
+}
+.popup#gameover.success .fail-cont {
+  display: none;
+}
+.popup#gameover.fail .timeout-cont {
+  display: none;
+}
+.popup#gameover.fail .success-cont {
+  display: none;
+}
+.popup#gameover.fail .fail-cont {
+  display: block;
+}
+.popup#fillInfo .popup-main {
+  width: 718px;
+  height: 1112px;
+  padding-top: 100px;
+}
+.popup#fillInfo .fill-cont {
+  display: none;
+}
+.popup#fillInfo .send-ok-cont {
+  display: none;
+}
+.popup#fillInfo .fill-ok-cont {
+  display: none;
+}
+.popup#fillInfo.fill .fill-cont {
+  display: block;
+  position: relative;
+  width: 718px;
+  height: 1112px;
+  background: url(../images/game/step4/step4-bg.png);
+}
+.popup#fillInfo.fill input[type=text], .popup#fillInfo.fill input[type=tel], .popup#fillInfo.fill input[type=email] {
+  position: absolute;
+  left: 226px;
+  width: 383px;
+  height: 39px;
+  border: none;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.popup#fillInfo.fill .name {
+  top: 456px;
+}
+.popup#fillInfo.fill .phone {
+  top: 520px;
+}
+.popup#fillInfo.fill .mail {
+  top: 584px;
+}
+.popup#fillInfo.fill select {
+  position: absolute;
+  top: 649px;
+  width: 187px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.popup#fillInfo.fill .add1 {
+  left: 226px;
+}
+.popup#fillInfo.fill .add2 {
+  left: 433px;
+}
+.popup#fillInfo.fill .add3 {
+  top: 711px;
+}
+.popup#fillInfo.fill .add4{
+  display:none;
+}
+.popup#fillInfo.fill .tick {
+  position: absolute;
+  top: 821px;
+  left: 115px;
+  width: 61px;
+  height: 50px;
+  background: url(../images/game/step4/tick.png) 0 0 no-repeat;
+}
+.popup#fillInfo.fill .tick.active {
+  top: 812px;
+  left: 120px;
+  height: 58px;
+  background: url(../images/game/step4/tick.png) 0 -49px no-repeat;
+}
+.popup#fillInfo.fill .rule {
+  position: absolute;
+  top: 857px;
+  left: 253px;
+  width: 266px;
+  height: 32px;
+}
+.popup#fillInfo.fill .submit {
+  position: absolute;
+  top: 959px;
+  left: 195px;
+  width: 334px;
+  height: 86px;
+  background: url(../images/game/step4/submit-btn.png) 0 0 no-repeat;
+}
+.popup#fillInfo.fill .submit:hover {
+  top: 957px;
+  height: 92px;
+  background: url(../images/game/step4/submit-btn.png) 0 -86px no-repeat;
+}
+.popup#fillInfo.send-ok .send-ok-cont {
+  display: block;
+  position: relative;
+  width: 718px;
+  height: 1112px;
+  background: url(../images/game/step5/step5-bg.png);
+}
+.popup#fillInfo.send-ok .send-ok-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 283px;
+}
+.popup#fillInfo.send-ok .send-ok-again-btn {
+  position: absolute;
+  left: -36px;
+  right: 0;
+  margin: 0 auto;
+  top: 650px;
+  width: 439px;
+  height: 147px;
+  background: url(../images/game/step5/again-btn.png) 0 0 no-repeat;
+}
+.popup#fillInfo.send-ok .send-ok-again-btn:hover {
+  background: url(../images/game/step5/again-btn.png) 0 -147px no-repeat;
+}
+.popup#fillInfo.send-ok .send-ok-share-btn {
+  position: absolute;
+  left: -36px;
+  right: 0;
+  margin: 0 auto;
+  top: 805px;
+  width: 439px;
+  height: 148px;
+  background: url(../images/game/step5/share-btn.png) 0 0 no-repeat;
+}
+.popup#fillInfo.send-ok .send-ok-share-btn:hover {
+  height: 154px;
+  background: url(../images/game/step5/share-btn.png) 0 -148px no-repeat;
+}
+.popup#fillInfo.fill-ok .fill-ok-cont {
+  display: block;
+  position: relative;
+  width: 718px;
+  height: 1112px;
+  background: url(../images/game/step5/step5-bg.png);
+}
+.popup#fillInfo.fill-ok .fill-ok-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 283px;
+}
+.popup#fillInfo.fill-ok .fill-ok-again-btn {
+  position: absolute;
+  left: -36px;
+  right: 0;
+  margin: 0 auto;
+  top: 650px;
+  width: 439px;
+  height: 147px;
+  background: url(../images/game/step5/again-btn.png) 0 0 no-repeat;
+}
+.popup#fillInfo.fill-ok .fill-ok-again-btn:hover {
+  background: url(../images/game/step5/again-btn.png) 0 -147px no-repeat;
+}
+.popup#fillInfo.fill-ok .fill-ok-share-btn {
+  position: absolute;
+  left: -36px;
+  right: 0;
+  margin: 0 auto;
+  top: 805px;
+  width: 439px;
+  height: 148px;
+  background: url(../images/game/step5/share-btn.png) 0 0 no-repeat;
+}
+.popup#fillInfo.fill-ok .fill-ok-share-btn:hover {
+  height: 154px;
+  background: url(../images/game/step5/share-btn.png) 0 -148px no-repeat;
+}

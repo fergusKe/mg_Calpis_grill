@@ -1,0 +1,66 @@
+.main {
+  position: relative;
+  width: 800px;
+  height: 1200px;
+  margin: 0 auto;
+  background: url(../images/index/main-bg.png) 0 0 no-repeat;
+  padding-top: 70px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.s1 {
+  position: absolute;
+  left: 3px;
+  width: 788px;
+  height: 392px;
+  background: url(../images/index/s1.png);
+}
+
+.s2 {
+  position: absolute;
+  top: 407px;
+  left: 76px;
+  width: 724px;
+  height: 200px;
+  background: url(../images/index/s2.png);
+  z-index: 1;
+}
+
+.s3 {
+  position: absolute;
+  top: 492px;
+  left: 59px;
+  width: 737px;
+  height: 676px;
+  background: url(../images/index/s3.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.start-btn {
+  position: absolute;
+  top: 570px;
+  left: 499px;
+  width: 300px;
+  height: 261px;
+  background: url(../images/index/start-btn.png) 0 0 no-repeat;
+}
+
+.drink {
+  position: absolute;
+  top: 863px;
+  left: 10px;
+  width: 261px;
+  height: 331px;
+  background: url(../images/index/drink.png);
+}
+
+.bear {
+  position: absolute;
+  top: 887px;
+  right: 15px;
+  width: 248px;
+  height: 308px;
+  background: url(../images/index/bear.png);
+}

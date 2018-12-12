@@ -1,0 +1,47 @@
+body {
+  height: auto;
+}
+.wrap {
+  overflow: hidden;
+  height: 1200px;
+}
+
+.main {
+  position: relative;
+  width: 738px;
+  height: 1093px;
+  margin: 0 auto;
+  background: url(../images/activity/bg.png) 0 0 no-repeat;
+  margin-top: 70px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.slogan {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 787px;
+  height: 387px;
+  background: url(../images/activity/slogan.png) 0 0 no-repeat;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 362px;
+  width: 247px;
+  height: 49px;
+  background: url(../images/activity/info-title.png) 0 0 no-repeat;
+}
+
+.main-cont {
+  position: absolute;
+  top: 430px;
+  left: 30px;
+  width: 738px;
+  height: 648px;
+}
